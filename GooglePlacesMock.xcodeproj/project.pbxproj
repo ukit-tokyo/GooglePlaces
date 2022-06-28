@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		4EFD941FD2FCC740EC70C87A /* Pods-GooglePlacesMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlacesMock.release.xcconfig"; path = "Target Support Files/Pods-GooglePlacesMock/Pods-GooglePlacesMock.release.xcconfig"; sourceTree = "<group>"; };
 		861CB04FF0BDBF93A1D2EA88 /* Pods_GooglePlacesMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlacesMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6207943286AFE8C007D1F36 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		B6BAC2AF286AF8F600AE4318 /* GooglePlacesMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlacesMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BAC2B2286AF8F600AE4318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6BAC2B4286AF8F600AE4318 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,10 +51,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B6207942286AFE6F007D1F36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6207943286AFE8C007D1F36 /* Secrets.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B6BAC2A6286AF8F600AE4318 = {
 			isa = PBXGroup;
 			children = (
 				B6BAC2B1286AF8F600AE4318 /* GooglePlacesMock */,
+				B6207942286AFE6F007D1F36 /* Resources */,
 				B6BAC2B0286AF8F600AE4318 /* Products */,
 				F83B9799DA241D5B4F75103A /* Pods */,
 				6EE3F581B00F114239045FCF /* Frameworks */,
@@ -88,7 +98,6 @@
 				D8CAE2BE2F60BC1DF01EED57 /* Pods-GooglePlacesMock.debug.xcconfig */,
 				4EFD941FD2FCC740EC70C87A /* Pods-GooglePlacesMock.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,6 +246,7 @@
 /* Begin XCBuildConfiguration section */
 		B6BAC2C1286AF8F700AE4318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6207943286AFE8C007D1F36 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -297,6 +307,7 @@
 		};
 		B6BAC2C2286AF8F700AE4318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6207943286AFE8C007D1F36 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
